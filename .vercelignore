@@ -1,0 +1,8 @@
+# Vercel 部署文件排除规则（.gitignore 不参与 web 上传）
+node_modules
+client/node_modules
+client/dist
+data/auth.json
+data/assistant.json
+data/secret
+data/INITIAL_PASSWORD.txt

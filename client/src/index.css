@@ -1,0 +1,246 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+/* ============ 主题变量 ============ */
+:root {
+  --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter",
+    "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC",
+    sans-serif;
+  --bg: #fbfbfd;
+  --bg-soft: #f5f5f7;
+  --fg: #1d1d1f;
+  --fg-muted: #6e6e73;
+  --fg-faint: #a1a1a6;
+  --card: rgba(255, 255, 255, 0.72);
+  --card-strong: rgba(255, 255, 255, 0.92);
+  --line: rgba(0, 0, 0, 0.09);
+  --nav: rgba(251, 251, 253, 0.7);
+  --accent: #0a84ff;
+  --accent-2: #bf5af2;
+  --radius: 24px;
+  --shadow: 0 24px 70px -24px rgba(0, 0, 0, 0.22);
+}
+.dark {
+  --bg: #000000;
+  --bg-soft: #0a0a0c;
+  --fg: #f5f5f7;
+  --fg-muted: #86868b;
+  --fg-faint: #4a4a50;
+  --card: rgba(255, 255, 255, 0.055);
+  --card-strong: rgba(28, 28, 30, 0.88);
+  --line: rgba(255, 255, 255, 0.1);
+  --nav: rgba(0, 0, 0, 0.5);
+  --shadow: 0 24px 70px -24px rgba(0, 0, 0, 0.8);
+}
+
+@theme inline {
+  --color-surface: var(--bg);
+  --color-surface-soft: var(--bg-soft);
+  --color-ink: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-faint: var(--fg-faint);
+  --color-card: var(--card);
+  --color-card-strong: var(--card-strong);
+  --color-line: var(--line);
+  --color-nav: var(--nav);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --font-sans: var(--font-stack);
+}
+
+/* ============ 基础 ============ */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-stack);
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+::selection {
+  background: color-mix(in srgb, var(--accent) 32%, transparent);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+/* ============ 工具类 ============ */
+.glass {
+  background: var(--card);
+  backdrop-filter: blur(24px) saturate(1.7);
+  -webkit-backdrop-filter: blur(24px) saturate(1.7);
+  border: 1px solid var(--line);
+}
+.text-gradient {
+  background: linear-gradient(105deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-soft {
+  background: linear-gradient(105deg, var(--fg), var(--fg-muted));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* 噪点颗粒 */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* 渐变悬停(社交图标等) */
+.btn-gradient-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-gradient-hover:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -10px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+/* ============ 动画 ============ */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee var(--marquee-duration, 30s) linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes drift-a {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(70px, -50px) scale(1.18);
+  }
+  100% {
+    transform: translate(-40px, 40px) scale(0.92);
+  }
+}
+@keyframes drift-b {
+  0% {
+    transform: translate(0, 0) scale(1.05);
+  }
+  50% {
+    transform: translate(-80px, 60px) scale(0.9);
+  }
+  100% {
+    transform: translate(50px, -40px) scale(1.15);
+  }
+}
+@keyframes drift-c {
+  0% {
+    transform: translate(0, 0) scale(0.95);
+  }
+  50% {
+    transform: translate(60px, 70px) scale(1.1);
+  }
+  100% {
+    transform: translate(-60px, -30px) scale(1);
+  }
+}
+.aurora-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.55;
+  will-change: transform;
+}
+.aurora-blob-a {
+  animation: drift-a 22s ease-in-out infinite alternate;
+}
+.aurora-blob-b {
+  animation: drift-b 26s ease-in-out infinite alternate;
+}
+.aurora-blob-c {
+  animation: drift-c 30s ease-in-out infinite alternate;
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+.animate-float {
+  animation: float-y 5s ease-in-out infinite;
+}
+
+@keyframes bounce-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.4;
+  }
+}
+.animate-bounce-soft {
+  animation: bounce-soft 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+.animate-pulse-ring {
+  animation: pulse-ring 2.4s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
