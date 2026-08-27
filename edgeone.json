@@ -1,0 +1,7 @@
+{
+  "rootDir": ".",
+  "outputDir": "client/dist",
+  "routes": [
+    { "pattern": "/*", "path": "/index.html" }
+  ]
+}
