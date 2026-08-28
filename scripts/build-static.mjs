@@ -19,7 +19,11 @@ if (fs.existsSync(siteSrc)) {
   fs.copyFileSync(siteSrc, path.join(DIST_DIR, 'site.json'))
   console.log('[build-static] 已复制 data/site.json -> client/dist/site.json')
 } else {
-  console.warn('[build-static] 未找到 data/site.json，主页将显示加载失败')
+  if (fs.existsSync(path.join(DIST_DIR, 'site.json'))) {
+    console.log('[build-static] 使用 client/public/site.json 作为静态主页快照')
+  } else {
+    console.warn('[build-static] 未找到 data/site.json 或 client/public/site.json，主页将显示加载失败')
+  }
 }
 
 // 2) uploads —— 站内图片
@@ -36,4 +40,6 @@ if (fs.existsSync(uploadsSrc)) {
     }
   }
   console.log('[build-static] 已复制 ' + count + ' 个文件 data/uploads -> client/dist/uploads')
+} else if (fs.existsSync(uploadsDest)) {
+  console.log('[build-static] 使用 client/public/uploads 作为静态图片快照')
 }

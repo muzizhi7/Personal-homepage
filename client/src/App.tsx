@@ -1,11 +1,13 @@
-import { useEffect } from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { lazy, Suspense, useEffect } from 'react'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import Lenis from 'lenis'
 import { LanguageProvider } from './lib/i18n'
 import { SiteProvider, useSite } from './lib/site'
 import Home from './site/Home'
-import AdminApp from './admin/AdminApp'
 import LoadingScreen from './components/LoadingScreen'
+
+const publicOnly = import.meta.env.VITE_PUBLIC_ONLY === '1'
+const AdminApp = lazy(() => import('./admin/AdminApp'))
 
 function ScrollManager() {
   const { pathname } = useLocation()
@@ -53,7 +55,17 @@ function Shell() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/admin" element={<AdminApp />} />
+      {!publicOnly && (
+        <Route
+          path="/admin"
+          element={
+            <Suspense fallback={<LoadingScreen />}>
+              <AdminApp />
+            </Suspense>
+          }
+        />
+      )}
+      {publicOnly && <Route path="/admin" element={<Navigate to="/" replace />} />}
       <Route path="*" element={<Home />} />
     </Routes>
   )

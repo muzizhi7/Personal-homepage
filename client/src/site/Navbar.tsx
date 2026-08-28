@@ -9,6 +9,8 @@ import { Icon } from '../components/icons'
 import { EASE, IconButton, LangToggle } from '../components/ui'
 import { resolveProfileAvatar } from './profile-avatar'
 
+const publicOnly = import.meta.env.VITE_PUBLIC_ONLY === '1'
+
 export default function Navbar() {
   const { site, t } = useSite()
   const [scrolled, setScrolled] = useState(false)
@@ -127,11 +129,13 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2">
             <LangToggle />
-            <Link to="/admin" aria-label="管理后台">
-              <IconButton label="管理后台">
-                <Icon name="settings" size={16} />
-              </IconButton>
-            </Link>
+            {!publicOnly && (
+              <Link to="/admin" aria-label="管理后台">
+                <IconButton label="管理后台">
+                  <Icon name="settings" size={16} />
+                </IconButton>
+              </Link>
+            )}
             <IconButton className="md:hidden" label="菜单" onClick={() => setMenuOpen((v) => !v)}>
               <Icon name={menuOpen ? 'close' : 'menu'} size={17} />
             </IconButton>

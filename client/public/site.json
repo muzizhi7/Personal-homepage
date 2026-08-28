@@ -1,0 +1,687 @@
+{
+  "version": 1,
+  "meta": {
+    "title": {
+      "zh": "李智豪 · AI产品经理 / AI产品专家",
+      "en": "Zhihao Li · AI Product Manager / AI Product Expert"
+    },
+    "description": {
+      "zh": "5+ 年产品、数据与 AI 经验，江南大学控制工程硕士，朗新科技集团 AI 高级产品专家。专注 AI 产品与智能体产品设计，具备从场景定义、Agent 架构到产品交付的完整 AI 产品落地能力。",
+      "en": "5+ years in product, data & AI. M.S. in Control Engineering (Jiangnan University). Senior AI Product Expert at Longshine Technology. End-to-end AI product delivery: from scenario definition and agent architecture to shipped products."
+    },
+    "keywords": "AI产品经理, AI Agent, 智能体, 产品设计, RAG, 可信数据空间, 数据中台, AI Product Manager",
+    "favicon": "/uploads/1787315553364-590a940a.jpeg",
+    "defaultLang": "zh"
+  },
+  "theme": {
+    "mode": "dark",
+    "accent": "#0a84ff",
+    "accent2": "#000000",
+    "radius": 24,
+    "fontScale": 1,
+    "showGrain": true,
+    "showAurora": true
+  },
+  "layout": {
+    "sections": [
+      "hero",
+      "about",
+      "stats",
+      "experience",
+      "education",
+      "skills",
+      "projects",
+      "contact"
+    ]
+  },
+  "hero": {
+    "enabled": true,
+    "badge": {
+      "zh": "欢迎来到我的主页 👋",
+      "en": "Welcome to my homepage 👋"
+    },
+    "name": {
+      "zh": "李智豪",
+      "en": "Zhihao Li"
+    },
+    "headline": {
+      "zh": "用智能体重构产品体验",
+      "en": "Reimagining product experiences with AI Agents"
+    },
+    "subheadline": {
+      "zh": "朗新科技集团 AI 高级产品专家 · 江南大学控制工程硕士。专注 AI 产品与 Agent 产品设计，从业务洞察、AI 场景定义、Agent 架构到产品交付的一体化落地。个人产品「观赛官 GameSense」AI OPC 实践者。",
+      "en": "Senior AI Product Expert @ Longshine Technology · M.S. in Control Engineering @ Jiangnan University. Focused on AI & Agent product design — from insight, scenario definition and agent architecture to delivery. Practicing AI OPC with my product GameSense."
+    },
+    "avatar": "/uploads/1787401656297-3b8d1b91.webp",
+    "badges": [
+      {
+        "zh": "AI 产品经理",
+        "en": "AI Product Manager"
+      },
+      {
+        "zh": "Agent 产品设计",
+        "en": "Agent Product Design"
+      },
+      {
+        "zh": "Prompt & Context 工程",
+        "en": "Prompt & Context Eng."
+      },
+      {
+        "zh": "RAG / Graph RAG",
+        "en": "RAG / Graph RAG"
+      },
+      {
+        "zh": "AI Coding",
+        "en": "AI Coding"
+      },
+      {
+        "zh": "数据中台",
+        "en": "Data Platform"
+      },
+      {
+        "zh": "可信数据空间",
+        "en": "Trusted Data Space"
+      },
+      {
+        "zh": "AI OPC",
+        "en": "AI OPC"
+      }
+    ],
+    "ctaPrimary": {
+      "label": {
+        "zh": "查看核心项目",
+        "en": "View my work"
+      },
+      "href": "#projects"
+    },
+    "ctaSecondary": {
+      "label": {
+        "zh": "联系我",
+        "en": "Contact me"
+      },
+      "href": "#contact"
+    }
+  },
+  "about": {
+    "enabled": true,
+    "title": {
+      "zh": "关于我",
+      "en": "About Me"
+    },
+    "paragraphs": [
+      {
+        "zh": "5+ 年产品、数据与 AI 相关经验，江南大学控制工程硕士，现任朗新科技集团 AI 高级产品专家，工作重心已由可信数据空间产品规划转向 AI 产品与智能体产品设计。具备从业务洞察、AI 场景定义、产品 / Agent 架构、Prompt 与上下文工程，到原型 Demo、研发协同与产品交付的完整 AI 产品落地能力。",
+        "en": "5+ years across product, data and AI. M.S. in Control Engineering from Jiangnan University; currently Senior AI Product Expert at Longshine Technology, where my focus has shifted from trusted data space products to AI products and agent product design — covering the full AI product delivery loop: business insight, scenario definition, product/agent architecture, prompt & context engineering, prototypes, R&D collaboration and shipping."
+      },
+      {
+        "zh": "近一年重点负责 AI Agent 平台、AI 时代数据中台及 AI Native 产品规划与落地，并通过个人产品「观赛官 GameSense」实践 AI OPC（一人公司）；同时拥有能源数据、可信数据空间及复杂 B/C 端产品经验，持续研究 Agent Harness / Runtime、RAG / Graph RAG、Ontology、Workflow、A2A、AI Coding 等 AI 原生技术体系。",
+        "en": "In the past year I have led the planning and delivery of an AI Agent platform, an AI-era data platform, and AI-native products — while practicing AI OPC (one-person company) with my own product GameSense. I also bring deep experience in energy data, trusted data spaces and complex B/C-end products, and keep researching AI-native stacks: Agent Harness/Runtime, RAG/Graph RAG, ontology, workflow, A2A and AI coding."
+      },
+      {
+        "zh": "学生时期在 B 站做视频累计获得 30+ 万播放；曾与朋友共同创业，具备较强的管理、沟通与跨团队协作能力。",
+        "en": "During college I created Bilibili videos with 300K+ cumulative views, and co-founded a startup with friends — sharpening my management, communication and cross-team collaboration skills."
+      }
+    ],
+    "highlights": [
+      {
+        "zh": "完整 AI 产品落地能力",
+        "en": "End-to-end AI product delivery"
+      },
+      {
+        "zh": "Agent 平台与数据中台",
+        "en": "Agent platform & data platform"
+      },
+      {
+        "zh": "能源行业 AI 应用",
+        "en": "Energy-industry AI apps"
+      },
+      {
+        "zh": "AI OPC 实践者",
+        "en": "AI OPC practitioner"
+      },
+      {
+        "zh": "B 端 + C 端 · 国内 + 国际",
+        "en": "B2B + B2C · CN + global"
+      },
+      {
+        "zh": "高级 AI 产品经理认证",
+        "en": "Senior AI PM certified"
+      }
+    ],
+    "avatar": "/uploads/1787318001144-bbf1465a.jpg"
+  },
+  "stats": {
+    "enabled": true,
+    "title": {
+      "zh": "一些数字",
+      "en": "By the numbers"
+    },
+    "items": [
+      {
+        "value": "5+",
+        "label": {
+          "zh": "年产品 / 数据 / AI 经验",
+          "en": "Years in product, data & AI"
+        }
+      },
+      {
+        "value": "30万+",
+        "label": {
+          "zh": "B站视频累计播放",
+          "en": "Bilibili video views"
+        }
+      },
+      {
+        "value": "100+",
+        "label": {
+          "zh": "观赛官稳定用户",
+          "en": "GameSense active users"
+        }
+      },
+      {
+        "value": "15+",
+        "label": {
+          "zh": "互联网项目/产品经验",
+          "en": "Internet Projects and Products"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "enabled": true,
+    "title": {
+      "zh": "工作经历",
+      "en": "Experience"
+    },
+    "items": [
+      {
+        "company": {
+          "zh": "朗新科技集团",
+          "en": "Longshine Technology Group"
+        },
+        "role": {
+          "zh": "产品专家 / AI 高级产品专家",
+          "en": "Product Expert / Senior AI Product Expert"
+        },
+        "period": {
+          "zh": "2023.06 — 至今",
+          "en": "Jun 2023 — Present"
+        },
+        "location": {
+          "zh": "江苏 · 无锡",
+          "en": "Wuxi, Jiangsu"
+        },
+        "description": {
+          "zh": "工作方向由数据要素、可信数据空间逐步转向 AI 产品、Agent 产品及能源行业 AI 应用，负责 AI 产品规划、解决方案设计及重点项目落地。负责数据运营业务线 AI 创新小组，主导 AI Agent 平台与能源数据智能底座规划（Agent Harness / Runtime、Workspace、Tool / Plugin、Workflow、RAG / Graph RAG、知识图谱、本体、长任务执行等能力）；建立 AI 辅助产品经理工作方法，将大模型与 AI Coding 引入需求分析、行业研究、产品架构、原型、PRD、Demo 与解决方案生产流程。",
+          "en": "Shifted focus from data elements & trusted data space toward AI products, agent products and energy-industry AI apps — owning AI product planning, solution design and key project delivery. Leads the AI innovation squad of the data operations business line; leads planning of the AI Agent platform and energy data intelligence foundation (Agent Harness/Runtime, Workspace, Tool/Plugin, Workflow, RAG/Graph RAG, knowledge graph, ontology, long-running tasks). Built an AI-augmented PM workflow that brings LLMs and AI coding into requirements, industry research, architecture, prototypes, PRDs, demos and solutions."
+        },
+        "tags": [
+          "AI 产品规划",
+          "Agent 平台",
+          "数据中台",
+          "AI 创新小组",
+          "能源 AI 应用"
+        ],
+        "logo": "",
+        "url": "https://www.longshine.com/index.html"
+      },
+      {
+        "company": {
+          "zh": "江苏中科云墨数字科技有限公司",
+          "en": "Jiangsu Zhongke Yunmo Digital Technology"
+        },
+        "role": {
+          "zh": "产品经理",
+          "en": "Product Manager"
+        },
+        "period": {
+          "zh": "2022.07 — 2023.06",
+          "en": "Jul 2022 — Jun 2023"
+        },
+        "location": {
+          "zh": "江苏 · 无锡",
+          "en": "Wuxi, Jiangsu"
+        },
+        "description": {
+          "zh": "负责政企数字化、工业互联网及 IoT 产品需求调研、业务分析、产品架构、PRD、流程与原型设计；主导中国疾控中心污水处理物联网系统、电子制造业协同创新平台、新吴检察院智慧检察系统等项目。",
+          "en": "Owned requirements research, business analysis, product architecture, PRDs, flows and prototypes for government-enterprise digitalization, industrial internet and IoT products. Led projects including a CDC wastewater IoT system, an electronics-manufacturing collaborative innovation platform, and a smart prosecution system for Xinwu Procuratorate."
+        },
+        "tags": [
+          "政企数字化",
+          "工业互联网",
+          "IoT",
+          "智慧检察"
+        ],
+        "logo": "",
+        "url": ""
+      },
+      {
+        "company": {
+          "zh": "无锡洛希极限科技有限公司",
+          "en": "Wuxi Luoxi Extreme Technology"
+        },
+        "role": {
+          "zh": "创始人 / 产品经理",
+          "en": "Founder / Product Manager"
+        },
+        "period": {
+          "zh": "2020.10 — 2022.05",
+          "en": "Oct 2020 — May 2022"
+        },
+        "location": {
+          "zh": "江苏 · 无锡",
+          "en": "Wuxi, Jiangsu"
+        },
+        "description": {
+          "zh": "负责创业团队组建、投资人及客户沟通、市场调研、解决方案、产品设计与项目管理；主导废旧铅酸电池智能切割、课程管理及智慧水务等产品。",
+          "en": "Built the founding team, talked with investors and clients, ran market research, solutioning, product design and project management. Led products including intelligent cutting of waste lead-acid batteries, course management and smart water services."
+        },
+        "tags": [
+          "创业",
+          "产品设计",
+          "项目管理",
+          "智慧水务"
+        ],
+        "logo": "",
+        "url": ""
+      },
+      {
+        "company": {
+          "zh": "中国中化 · 蓝星智云",
+          "en": "Sinochem · BlueStar Intelligent Cloud"
+        },
+        "role": {
+          "zh": "数据建模工程师（实习）",
+          "en": "Data Modeling Engineer (Intern)"
+        },
+        "period": {
+          "zh": "2019.03 — 2019.09",
+          "en": "Mar 2019 — Sep 2019"
+        },
+        "location": {
+          "zh": "",
+          "en": ""
+        },
+        "description": {
+          "zh": "面向化工流程工业开展业务与数据需求、建模方案设计；使用改进 PCA 等算法完成锅炉、精馏塔、脱硫脱硝等 20+ 工艺段建模，并参与产品功能设计及甲方技术汇报。",
+          "en": "Collected business & data requirements and designed modeling solutions for chemical process industries; applied improved PCA and other algorithms to model 20+ process segments (boilers, distillation columns, desulfurization/denitrification), and contributed to product feature design and client technical presentations."
+        },
+        "tags": [
+          "数据建模",
+          "PCA",
+          "流程工业"
+        ],
+        "logo": "",
+        "url": ""
+      }
+    ]
+  },
+  "education": {
+    "enabled": true,
+    "title": {
+      "zh": "教育背景",
+      "en": "Education"
+    },
+    "items": [
+      {
+        "school": {
+          "zh": "江南大学",
+          "en": "Jiangnan University"
+        },
+        "degree": {
+          "zh": "硕士 · 控制工程",
+          "en": "M.S. in Control Engineering"
+        },
+        "period": {
+          "zh": "2018.09 — 2021.06",
+          "en": "Sep 2018 — Jun 2021"
+        },
+        "description": {
+          "zh": "研究方向：基于流形学习的流程工业大数据分析——故障诊断与工艺流程建模。主要荣誉：创想无锡市赛优秀奖（2021）、无锡新吴区青年创业大赛第二名（2021）、国家一等奖学金（2020）、二等奖学金（2018、2019）。",
+          "en": "Research: manifold-learning-based big data analytics for process industries — fault diagnosis and process modeling. Honors: Wuxi Innovation Contest Excellence Award (2021), 2nd place Wuxi Xinwu Youth Entrepreneurship Competition (2021), National First-Class Scholarship (2020), Second-Class Scholarship (2018, 2019)."
+        }
+      }
+    ]
+  },
+  "skills": {
+    "enabled": true,
+    "title": {
+      "zh": "技能栈",
+      "en": "Skills"
+    },
+    "groups": [
+      {
+        "name": {
+          "zh": "AI 产品与 Agent",
+          "en": "AI Product & Agent"
+        },
+        "items": [
+          {
+            "name": "AI 场景定义",
+            "level": 95
+          },
+          {
+            "name": "Agent 产品设计",
+            "level": 92
+          },
+          {
+            "name": "Agent Harness / Runtime",
+            "level": 88
+          },
+          {
+            "name": "Prompt / Context 工程",
+            "level": 90
+          },
+          {
+            "name": "AI 输出评估",
+            "level": 82
+          }
+        ]
+      },
+      {
+        "name": {
+          "zh": "LLM & Agent 工程",
+          "en": "LLM & Agent Engineering"
+        },
+        "items": [
+          {
+            "name": "Agent Loop",
+            "level": 88
+          },
+          {
+            "name": "Tool Calling / Plugin",
+            "level": 90
+          },
+          {
+            "name": "Workflow / Subagent",
+            "level": 86
+          },
+          {
+            "name": "MCP / A2A",
+            "level": 78
+          },
+          {
+            "name": "Checkpoint / Resume / Compaction",
+            "level": 80
+          }
+        ]
+      },
+      {
+        "name": {
+          "zh": "数据智能与知识",
+          "en": "Data Intelligence & Knowledge"
+        },
+        "items": [
+          {
+            "name": "RAG / Graph RAG",
+            "level": 85
+          },
+          {
+            "name": "Ontology / 本体",
+            "level": 82
+          },
+          {
+            "name": "知识图谱",
+            "level": 80
+          },
+          {
+            "name": "可信数据空间 / 数据要素",
+            "level": 85
+          },
+          {
+            "name": "高质量数据集",
+            "level": 84
+          }
+        ]
+      },
+      {
+        "name": {
+          "zh": "产品基本功",
+          "en": "Product Craft"
+        },
+        "items": [
+          {
+            "name": "产品规划",
+            "level": 95
+          },
+          {
+            "name": "需求分析",
+            "level": 93
+          },
+          {
+            "name": "业务 / 应用架构",
+            "level": 90
+          },
+          {
+            "name": "PRD / 原型（Axure · Figma）",
+            "level": 90
+          },
+          {
+            "name": "解决方案 / 客户汇报",
+            "level": 92
+          }
+        ]
+      },
+      {
+        "name": {
+          "zh": "主力工具",
+          "en": "Core Tools"
+        },
+        "items": [
+          {
+            "name": "Cursor / Codex（AI Coding）",
+            "level": 88
+          },
+          {
+            "name": "DeepSeek Harness",
+            "level": 85
+          },
+          {
+            "name": "LangChain / LangGraph",
+            "level": 80
+          },
+          {
+            "name": "n8n",
+            "level": 78
+          },
+          {
+            "name": "Tavily",
+            "level": 75
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "enabled": true,
+    "title": {
+      "zh": "核心项目经历",
+      "en": "Key Projects"
+    },
+    "items": [
+      {
+        "name": {
+          "zh": "观赛官 GameSense · AI 足球内容与智能应用",
+          "en": "GameSense · AI Football Content & Apps"
+        },
+        "description": {
+          "zh": "个人独立主导的 AI 足球产品，也是一次 AI OPC（一人公司）实践——用 AI 覆盖产品设计、开发、工作流、内容生产与运营增长。已上线 Web、H5、微信小程序，拥有 100+ 稳定用户，全平台累计粉丝约 1,000。独立负责产品定位、需求分析、信息架构、交互与版本规划，使用 AI Coding 完成主要 Web / H5 前端代码；设计赛事数据、新闻、球队、社媒热点等数据工作流（抓取、清洗、结构化、AI 加工与内容生成）；提供完整赛程、积分榜、比赛详情、国家队巡礼及 AI 教练室、AI 解说员、AI 问球等 AI Native 功能；并负责公众号、小红书、抖音等渠道运营获客与迭代。",
+          "en": "An AI football product I independently lead — also my AI OPC (one-person company) practice, using AI across product design, development, workflows, content production and growth. Live on Web, H5 and WeChat Mini Program with 100+ active users and ~1,000 followers across platforms. I own positioning, requirements, information architecture, interaction and roadmap, and used AI coding to build the main Web/H5 frontend; designed data workflows for fixtures, news, teams and social trends (crawl → clean → structure → AI processing → content generation); shipped full schedules, standings, match details and national team profiles, plus AI-native features (AI Coach, AI Commentator, AI Q&A); and run WeChat, Xiaohongshu and Douyin channels for acquisition and iteration."
+        },
+        "tags": [
+          "AI OPC",
+          "微信小程序",
+          "AI Native",
+          "内容运营",
+          "AI Coding"
+        ],
+        "image": "/uploads/1787316198799-6931ce7c.png",
+        "links": {
+          "demo": "https://gamesensecn.com",
+          "github": ""
+        },
+        "featured": true
+      },
+      {
+        "name": {
+          "zh": "AI Agent 平台 · 能源数据运营智能底座",
+          "en": "AI Agent Platform · Energy Data Intelligence"
+        },
+        "description": {
+          "zh": "面向能源数据运营及复杂业务场景建设 AI Agent 平台。参考 DeepSeek Harness 的 Harness + Plugin 思路重塑 Agent Runtime：将 Workflow、Subagent、Jobs 等扩展能力插件化，形成“稳定 Runtime Core + 可插拔能力扩展”，显著提升长任务执行、上下文管理、异常恢复与运行稳定性。规划智能应用层、智能平台层、Agent Harness / Runtime 与数据知识能力层，涵盖 Agent Loop、Session、Context、Plugin Context、Checkpoint / Resume、Compaction、Workspace、Agent API / SSE 等能力，并结合 RAG / Graph RAG、知识图谱、本体增强业务语义理解；面向政策智能问答、数据目录分析、行业信息研判、长任务执行、证据报告生成等场景设计智能应用。",
+          "en": "An AI Agent platform for energy data operations and complex business scenarios. Redesigned the Agent Runtime inspired by DeepSeek Harness (Harness + Plugin): workflows, subagents, jobs and other extensions are pluginized into a stable runtime core with pluggable capabilities — greatly improving long-task execution, context management, crash recovery and stability. Planned layers: intelligent apps, platform services, Agent Harness/Runtime and data-knowledge capabilities — covering Agent Loop, Session, Context, Plugin Context, Checkpoint/Resume, Compaction, Workspace, Agent API/SSE — enriched by RAG/Graph RAG, knowledge graphs and ontology for business semantics. Smart apps cover policy Q&A, data catalog analysis, industry intelligence, long-running tasks and evidence-based report generation."
+        },
+        "tags": [
+          "Agent Runtime",
+          "Harness + Plugin",
+          "长任务执行",
+          "RAG",
+          "DeepSeek Harness"
+        ],
+        "image": "/uploads/1787316257155-22d30608.png",
+        "links": {
+          "demo": "",
+          "github": ""
+        },
+        "featured": false
+      },
+      {
+        "name": {
+          "zh": "朗新能源智数 · AI 时代的数据中台",
+          "en": "Lanshun Energy Zhishu · Data Platform for the AI Era"
+        },
+        "description": {
+          "zh": "面向能源数据运营及 AI 应用建设的新一代数据智能底座。以 FastData 数据工程能力为执行内核、能源本体为统一数据组织方式，将传统以表、字段、任务、API 为中心的数据中台升级为面向数据、语义、知识、资产、产品与 AI 持续运营的数据智能平台。负责产品升级方向、产品定义、总体架构、能力地图、信息架构及 12 个月 Roadmap；引入能源本体、统一实体标识、Schema 语义映射、知识图谱、指标字典与业务规则，让跨系统能源数据从“机器可读取”走向“机器可理解”；规划 AI 辅助语义映射、质量问题定位、规则推荐及平台智能助手；设计“数据接入 → 标准治理 → 语义治理 → 加工建模 → 数据集 → 数据资产 → 数据产品 → 运营反馈”完整闭环。",
+          "en": "A next-gen data intelligence foundation for energy data operations and AI applications — FastData as the execution core, energy ontology as the unified data organization. It upgrades the traditional table/field/task/API-centric data platform into one continuously operating on data, semantics, knowledge, assets, products and AI. I own the upgrade direction, product definition, overall architecture, capability map, IA and a 12-month roadmap; introduced energy ontology, unified entity IDs, schema semantic mapping, knowledge graphs, metric dictionaries and business rules so cross-system energy data goes from machine-readable to machine-understandable; planned AI-assisted semantic mapping, quality issue localization, rule recommendations and a platform assistant; designed the full loop: ingestion → standard governance → semantic governance → modeling → datasets → assets → products → feedback."
+        },
+        "tags": [
+          "数据中台",
+          "能源本体",
+          "知识图谱",
+          "AI-Ready",
+          "FastData"
+        ],
+        "image": "",
+        "links": {
+          "demo": "",
+          "github": ""
+        },
+        "featured": false
+      },
+      {
+        "name": {
+          "zh": "国网能源行业可信数据空间",
+          "en": "Trusted Data Space for Energy (State Grid)"
+        },
+        "description": {
+          "zh": "国家电网行业级数据要素基础设施项目，构建跨主体、跨区域的数据可信流通与安全使用体系。主导可信数据空间总体功能体系规划与架构设计，覆盖主体可信连接、资源管理、产品管理、共享流通、可信管控、门户及运营管理等能力；深度参与南瑞、国网相关单位及网省协同，完成项目方案、产品设计及可运行 Web Demo；主导/参与《可信数据空间建设方案》、业务需求规格说明书及相关标准机制设计；参与中汽研汽车可信数据空间与国网可信数据空间互联互通方案。",
+          "en": "A State Grid industry-level data-element infrastructure project building cross-entity, cross-region trusted data circulation and secure usage. I led the overall functional system planning and architecture — trusted entity connection, resource management, product management, sharing & circulation, trusted governance, portal and operations; worked closely with NARI, State Grid units and provincial/city grids, delivering solutions, product design and a runnable Web demo; led/contributed to the construction blueprint, business requirements specs and standards; and joined the interoperability design between CATARC automotive and State Grid trusted data spaces."
+        },
+        "tags": [
+          "可信数据空间",
+          "数据要素",
+          "国网",
+          "数字合约"
+        ],
+        "image": "",
+        "links": {
+          "demo": "",
+          "github": ""
+        },
+        "featured": false
+      },
+      {
+        "name": {
+          "zh": "AI 产品体系与组织 AI 化",
+          "en": "AI Product System & Organizational AI"
+        },
+        "description": {
+          "zh": "建立 AI 辅助产品经理工作流，将 AI 应用于需求分析、竞品研究、架构设计、原型、PRD、解决方案与 Demo 开发；推动 ChatGPT(Codex)、Claude、Cursor 等 AI 工具在产品及业务团队中的应用，开展 AI 产品方法与工具培训；负责业务线 AI 创新方向研究，持续跟踪基础模型、Agent、AI Infra、RAG、知识图谱及 AI Coding 技术趋势；AI 创新项目入选集团“智赢未来奖”并进入前三。",
+          "en": "Established an AI-augmented PM workflow applying AI to requirements, competitive research, architecture, prototypes, PRDs, solutions and demo development; drove adoption of ChatGPT (Codex), Claude and Cursor across product & business teams with hands-on training; led AI innovation research for the business line, tracking foundation models, agents, AI infra, RAG, knowledge graphs and AI coding trends; the AI innovation project won the group’s “Smart Win Future” award, ranking top three."
+        },
+        "tags": [
+          "AI 工作流",
+          "组织提效",
+          "AI 培训"
+        ],
+        "image": "",
+        "links": {
+          "demo": "",
+          "github": ""
+        },
+        "featured": false
+      },
+      {
+        "name": {
+          "zh": "沙特 NEOM 新城 MaaS 一体化出行平台",
+          "en": "NEOM MaaS All-in-One Mobility Platform"
+        },
+        "description": {
+          "zh": "赴沙特开展现场需求调研，负责 MaaS 行业研究、需求分析、产品功能、原型与交互设计；长期直接与海外客户沟通，协同 UI/UX、研发及测试团队推进交付，积累国际化移动端产品及复杂出行业务经验。",
+          "en": "Conducted on-site requirements research in Saudi Arabia; owned MaaS industry research, requirements analysis, product features, prototyping and interaction design; communicated directly with overseas clients, coordinating UI/UX, R&D and QA to ship — building international mobile product experience in complex mobility businesses."
+        },
+        "tags": [
+          "MaaS",
+          "国际化",
+          "App",
+          "出行"
+        ],
+        "image": "",
+        "links": {
+          "demo": "",
+          "github": ""
+        },
+        "featured": false
+      }
+    ]
+  },
+  "contact": {
+    "enabled": true,
+    "title": {
+      "zh": "保持联系",
+      "en": "Let's Connect"
+    },
+    "subtitle": {
+      "zh": "无论是 AI 产品合作、Agent 产品交流，还是能源 AI 应用探讨，我的收件箱永远为你敞开。",
+      "en": "Whether it is AI product collaboration, agent design talk, or energy-AI applications — my inbox is always open."
+    },
+    "email": "zhihaosherlock@gmail.com",
+    "phone": "17826111330",
+    "location": {
+      "zh": "中国 · 江苏无锡",
+      "en": "Wuxi, Jiangsu, China"
+    },
+    "cta": {
+      "label": {
+        "zh": "发邮件给我",
+        "en": "Email me"
+      },
+      "href": "mailto:zhihaosherlock@gmail.com"
+    },
+    "socials": [
+      {
+        "platform": "mail",
+        "url": "mailto:zhihaosherlock@gmail.com",
+        "label": {
+          "zh": "邮箱",
+          "en": "Email"
+        }
+      },
+      {
+        "platform": "globe",
+        "url": "https://gamesensecn.com",
+        "label": {
+          "zh": "观赛官 GameSense",
+          "en": "GameSense"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "text": {
+      "zh": "© {year} 李智豪 · 用 AI 重构产品体验",
+      "en": "© {year} Zhihao Li · Reimagining products with AI"
+    },
+    "showSocials": true
+  }
+}

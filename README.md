@@ -117,6 +117,19 @@ PORT=8787 nohup node server/index.js > server.log 2>&1 &
 # 可选: 用 nginx/caddy 反代 80 端口, 或 pm2 守护: pm2 start server/index.js
 ```
 
+## ☁️ Vercel 公开主页
+
+Vercel 使用 GitHub `main` 分支自动部署，只发布公开主页，不提供管理后台：线上访问 `/admin` 会回到主页。Vercel 构建命令为 `npm run build:vercel`，当前公开配置快照和图片位于 `client/public/`；本地 `data/`（包含登录信息和模型配置）不会上传。
+
+本地后台修改内容后，执行下面的命令同步快照，再提交并推送，Vercel 会自动更新线上主页：
+
+```bash
+npm run sync-public
+git add client/public
+git commit -m "chore: update public homepage snapshot"
+git push
+```
+
 ## 🛟 常见问题
 
 - **忘记密码？** 删除 `data/auth.json` 并重启服务，会生成新密码。
