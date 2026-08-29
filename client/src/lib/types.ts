@@ -120,12 +120,18 @@ export interface Social {
   url: string
   label: BText
 }
+export interface ResumeConfig {
+  url: string
+  label: BText
+}
 export interface Contact {
   enabled: boolean
   title: BText
   subtitle: BText
   email: string
   phone: string
+  wechat: string
+  resume: ResumeConfig
   location: BText
   cta: CTA
   socials: Social[]

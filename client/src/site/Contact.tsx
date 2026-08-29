@@ -9,15 +9,17 @@ function ContactChip({
   icon,
   text,
   href,
+  copyText = text,
 }: {
   icon: IconName
   text: string
   href?: string
+  copyText?: string
 }) {
   const [copied, setCopied] = useState(false)
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(text)
+      await navigator.clipboard.writeText(copyText)
       setCopied(true)
       setTimeout(() => setCopied(false), 1600)
     } catch {
@@ -70,8 +72,19 @@ export default function Contact() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           {c.email && <ContactChip icon="mail" text={c.email} href={`mailto:${c.email}`} />}
           {c.phone && <ContactChip icon="phone" text={c.phone} href={`tel:${c.phone}`} />}
+          {c.wechat && <ContactChip icon="copy" text={`微信号：${c.wechat}`} copyText={c.wechat} />}
           {t(c.location) && <ContactChip icon="map-pin" text={t(c.location)} />}
         </div>
+        {c.resume?.url && (
+          <a
+            href={c.resume.url}
+            download
+            className="btn-gradient-hover inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-[13.5px] font-medium"
+          >
+            <Icon name="download" size={15} />
+            {t(c.resume.label)}
+          </a>
+        )}
         <div className="flex flex-wrap items-center justify-center gap-3">
           {c.socials
             .filter((s) => s.url)

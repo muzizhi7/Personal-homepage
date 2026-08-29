@@ -5,6 +5,7 @@ import {
   ImagePicker,
   LangInput,
   ListEditor,
+  ResumePicker,
   SectionCard,
   Slider,
   TagInput,
@@ -328,6 +329,7 @@ export function ProjectsEditor({ d, setSection }: EditorCtx) {
 /* ================= 联系 ================= */
 export function ContactEditor({ d, setSection }: EditorCtx) {
   const c = d.contact
+  const resume = c.resume ?? { url: '', label: { zh: '下载简历', en: 'Download Resume' } }
   return (
     <SectionCard title="联系与社交" enabled={c.enabled} onToggle={(v) => setSection('contact', { enabled: v })}>
       <Field label="标题">
@@ -343,7 +345,16 @@ export function ContactEditor({ d, setSection }: EditorCtx) {
         <Field label="电话（可选）">
           <TextInput value={c.phone} onChange={(phone) => setSection('contact', { phone })} placeholder="+86 138-0000-0000" />
         </Field>
+        <Field label="微信号（可选）" hint="主页点击后复制微信号">
+          <TextInput value={c.wechat} onChange={(wechat) => setSection('contact', { wechat })} placeholder="微信号" />
+        </Field>
       </div>
+      <Field label="离线简历" hint="支持 PDF / DOC / DOCX，≤10MB">
+        <ResumePicker value={resume.url} onChange={(url) => setSection('contact', { resume: { ...resume, url } })} />
+      </Field>
+      <Field label="简历按钮文案">
+        <LangInput value={resume.label} onChange={(label) => setSection('contact', { resume: { ...resume, label } })} />
+      </Field>
       <Field label="位置">
         <LangInput value={c.location} onChange={(location) => setSection('contact', { location })} />
       </Field>

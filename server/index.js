@@ -146,8 +146,29 @@ const upload = multer({
   },
 })
 
+const resumeFileUpload = multer({
+  storage: multer.diskStorage({
+    destination: (_req, _file, cb) => cb(null, UPLOADS_DIR),
+    filename: (_req, file, cb) => {
+      const ext = path.extname(file.originalname).toLowerCase()
+      cb(null, Date.now() + '-' + crypto.randomBytes(4).toString('hex') + ext)
+    },
+  }),
+  limits: { fileSize: 10 * 1024 * 1024 },
+  fileFilter: (_req, file, cb) => {
+    const ext = path.extname(file.originalname).toLowerCase()
+    if (['.pdf', '.doc', '.docx'].includes(ext)) cb(null, true)
+    else cb(new Error('仅支持 PDF / DOC / DOCX 简历文件'))
+  },
+})
+
 app.post('/api/admin/upload', requireAuth, upload.single('file'), (req, res) => {
   if (!req.file) return fail(res, 400, '未收到文件')
+  ok(res, { url: '/uploads/' + req.file.filename })
+})
+
+app.post('/api/admin/resume-upload', requireAuth, resumeFileUpload.single('file'), (req, res) => {
+  if (!req.file) return fail(res, 400, '未收到简历文件')
   ok(res, { url: '/uploads/' + req.file.filename })
 })
 

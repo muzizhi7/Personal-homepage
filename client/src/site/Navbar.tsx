@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useSite } from '../lib/site'
 import { SECTION_LABELS } from '../lib/types'
@@ -8,8 +7,6 @@ import { cn, scrollToHash } from '../lib/utils'
 import { Icon } from '../components/icons'
 import { EASE, IconButton, LangToggle } from '../components/ui'
 import { resolveProfileAvatar } from './profile-avatar'
-
-const publicOnly = import.meta.env.VITE_PUBLIC_ONLY === '1'
 
 export default function Navbar() {
   const { site, t } = useSite()
@@ -129,12 +126,16 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2">
             <LangToggle />
-            {!publicOnly && (
-              <Link to="/admin" aria-label="管理后台">
-                <IconButton label="管理后台">
-                  <Icon name="settings" size={16} />
-                </IconButton>
-              </Link>
+            {site.contact.resume?.url && (
+              <a
+                href={site.contact.resume.url}
+                download
+                aria-label={t(site.contact.resume.label)}
+                title={t(site.contact.resume.label)}
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-line text-muted transition-all duration-300 hover:border-accent/40 hover:bg-card hover:text-ink"
+              >
+                <Icon name="download" size={16} />
+              </a>
             )}
             <IconButton className="md:hidden" label="菜单" onClick={() => setMenuOpen((v) => !v)}>
               <Icon name={menuOpen ? 'close' : 'menu'} size={17} />

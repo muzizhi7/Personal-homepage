@@ -688,6 +688,14 @@
     },
     "email": "zhihaosherlock@gmail.com",
     "phone": "17826111330",
+    "wechat": "",
+    "resume": {
+      "url": "",
+      "label": {
+        "zh": "下载简历",
+        "en": "Download Resume"
+      }
+    },
     "location": {
       "zh": "中国 · 江苏无锡",
       "en": "Wuxi, Jiangsu, China"
@@ -706,14 +714,6 @@
         "label": {
           "zh": "邮箱",
           "en": "Email"
-        }
-      },
-      {
-        "platform": "globe",
-        "url": "https://gamesensecn.com",
-        "label": {
-          "zh": "观赛官 GameSense",
-          "en": "GameSense"
         }
       }
     ]

@@ -1,9 +1,6 @@
-import { Link } from 'react-router-dom'
 import { useSite } from '../lib/site'
 import { Icon, platformIcon } from '../components/icons'
 import { withYear } from '../lib/utils'
-
-const publicOnly = import.meta.env.VITE_PUBLIC_ONLY === '1'
 
 export default function Footer() {
   const { site, t } = useSite()
@@ -31,11 +28,6 @@ export default function Footer() {
                 </a>
               ))}
           </div>
-        )}
-        {!publicOnly && (
-          <Link to="/admin" className="text-[12px] text-faint transition-colors hover:text-muted">
-            管理后台
-          </Link>
         )}
       </div>
     </footer>

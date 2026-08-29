@@ -59,6 +59,11 @@ export const api = {
     fd.append('file', file)
     return req<{ url: string }>('/api/admin/upload', { method: 'POST', body: fd }).then((r) => r.url)
   },
+  uploadResume: (file: File) => {
+    const fd = new FormData()
+    fd.append('file', file)
+    return req<{ url: string }>('/api/admin/resume-upload', { method: 'POST', body: fd }).then((r) => r.url)
+  },
 }
 
 /* ================= 智能助手 ================= */

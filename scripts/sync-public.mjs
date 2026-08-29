@@ -33,4 +33,4 @@ if (fs.existsSync(uploadsSrc)) {
   }
 }
 
-console.log('[sync-public] 已同步 site.json 和 ' + count + ' 个图片文件到 client/public')
+console.log('[sync-public] 已同步 site.json 和 ' + count + ' 个公开资源文件到 client/public')

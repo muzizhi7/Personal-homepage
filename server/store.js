@@ -71,6 +71,11 @@ const ctaShape = {
   href: (v) => str(v, 500),
 }
 
+const resumeShape = {
+  url: (v) => str(v, 500),
+  label: btext,
+}
+
 export function sanitizeSite(raw = {}) {
   return {
     version: 1,
@@ -198,6 +203,8 @@ export function sanitizeSite(raw = {}) {
       subtitle: btext,
       email: (v) => str(v, 200),
       phone: (v) => str(v, 60),
+      wechat: (v) => str(v, 100),
+      resume: (v) => pick(v, resumeShape),
       location: btext,
       cta: (v) => pick(v, ctaShape),
       socials: (v) =>

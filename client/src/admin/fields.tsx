@@ -391,6 +391,62 @@ export function ImagePicker({
   )
 }
 
+/* ---------- 简历文件 ---------- */
+export function ResumePicker({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const [busy, setBusy] = useState(false)
+  const [err, setErr] = useState('')
+  const fileRef = useRef<HTMLInputElement>(null)
+
+  const chooseResume = async (file?: File) => {
+    if (fileRef.current) fileRef.current.value = ''
+    if (!file) return
+    const ext = file.name.slice(file.name.lastIndexOf('.')).toLowerCase()
+    if (!['.pdf', '.doc', '.docx'].includes(ext)) {
+      setErr('仅支持 PDF / DOC / DOCX 简历文件')
+      return
+    }
+    if (file.size > 10 * 1024 * 1024) {
+      setErr('简历文件不能超过 10MB')
+      return
+    }
+    setBusy(true)
+    setErr('')
+    try {
+      onChange(await api.uploadResume(file))
+    } catch (e: any) {
+      setErr(e?.message || '上传失败')
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <div className="space-y-2">
+      <div className="flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          onClick={() => fileRef.current?.click()}
+          disabled={busy}
+          className="inline-flex items-center gap-2 rounded-lg border border-line px-3.5 py-2 text-[12px] font-semibold text-ink transition-colors hover:border-accent/60 disabled:opacity-50"
+        >
+          <Icon name="upload" size={14} />
+          {busy ? '上传中…' : '上传简历文件'}
+        </button>
+        {value && <span className="text-[12px] text-emerald-400">已配置</span>}
+        <input
+          ref={fileRef}
+          type="file"
+          accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          className="hidden"
+          onChange={(event) => chooseResume(event.target.files?.[0])}
+        />
+      </div>
+      <TextInput value={value} onChange={onChange} placeholder="或直接粘贴简历文件 URL" />
+      {err && <p className="text-[12px] text-red-400">{err}</p>}
+    </div>
+  )
+}
+
 /* ---------- 数值/滑块 ---------- */
 export function Slider({
   value,
