@@ -15,8 +15,8 @@
   },
   "theme": {
     "mode": "dark",
-    "accent": "#0a84ff",
-    "accent2": "#000000",
+    "accent": "#0A84FF",
+    "accent2": "#e3e3e3",
     "radius": 24,
     "fontScale": 1,
     "showGrain": true,
@@ -28,9 +28,9 @@
       "about",
       "stats",
       "experience",
-      "education",
       "skills",
       "projects",
+      "education",
       "contact"
     ]
   },
@@ -124,6 +124,14 @@
     ],
     "highlights": [
       {
+        "zh": "高级 AI 产品经理认证",
+        "en": "Senior AI PM certified"
+      },
+      {
+        "zh": "AI OPC 实践者",
+        "en": "AI OPC practitioner"
+      },
+      {
         "zh": "完整 AI 产品落地能力",
         "en": "End-to-end AI product delivery"
       },
@@ -136,16 +144,8 @@
         "en": "Energy-industry AI apps"
       },
       {
-        "zh": "AI OPC 实践者",
-        "en": "AI OPC practitioner"
-      },
-      {
         "zh": "B 端 + C 端 · 国内 + 国际",
         "en": "B2B + B2C · CN + global"
-      },
-      {
-        "zh": "高级 AI 产品经理认证",
-        "en": "Senior AI PM certified"
       }
     ],
     "avatar": "/uploads/1787318001144-bbf1465a.jpg"
@@ -340,6 +340,24 @@
           "zh": "研究方向：基于流形学习的流程工业大数据分析——故障诊断与工艺流程建模。主要荣誉：创想无锡市赛优秀奖（2021）、无锡新吴区青年创业大赛第二名（2021）、国家一等奖学金（2020）、二等奖学金（2018、2019）。",
           "en": "Research: manifold-learning-based big data analytics for process industries — fault diagnosis and process modeling. Honors: Wuxi Innovation Contest Excellence Award (2021), 2nd place Wuxi Xinwu Youth Entrepreneurship Competition (2021), National First-Class Scholarship (2020), Second-Class Scholarship (2018, 2019)."
         }
+      },
+      {
+        "school": {
+          "zh": "宿迁学院",
+          "en": "SuqianUniversity"
+        },
+        "degree": {
+          "zh": "学士 · 机械自动化",
+          "en": "B.Eng. in Mechanical Engineering and Automation"
+        },
+        "period": {
+          "zh": "2014.09 — 2018.06",
+          "en": "Sep 2014 – Jun 2018"
+        },
+        "description": {
+          "zh": "",
+          "en": ""
+        }
       }
     ]
   },
@@ -528,7 +546,7 @@
           "en": "AI Agent Platform · Energy Data Intelligence"
         },
         "description": {
-          "zh": "面向能源数据运营及复杂业务场景建设 AI Agent 平台。参考 DeepSeek Harness 的 Harness + Plugin 思路重塑 Agent Runtime：将 Workflow、Subagent、Jobs 等扩展能力插件化，形成“稳定 Runtime Core + 可插拔能力扩展”，显著提升长任务执行、上下文管理、异常恢复与运行稳定性。规划智能应用层、智能平台层、Agent Harness / Runtime 与数据知识能力层，涵盖 Agent Loop、Session、Context、Plugin Context、Checkpoint / Resume、Compaction、Workspace、Agent API / SSE 等能力，并结合 RAG / Graph RAG、知识图谱、本体增强业务语义理解；面向政策智能问答、数据目录分析、行业信息研判、长任务执行、证据报告生成等场景设计智能应用。",
+          "zh": "面向能源数据运营及复杂业务场景建设 AI Agent 平台。包括政策智能问答、数据目录分析、行业信息研判、长任务执行、证据报告生成等场景的智能应用。\n参考 DeepSeek Harness 的 Harness + Plugin 思路重塑 Agent Runtime：将 Workflow、Subagent、Jobs 等扩展能力插件化，形成“稳定 Runtime Core + 可插拔能力扩展”，显著提升长任务执行、上下文管理、异常恢复与运行稳定性。规划智能应用层、智能平台层、Agent Harness / Runtime 与数据知识能力层，涵盖 Agent Loop、Session、Context、Plugin Context、Checkpoint / Resume、Compaction、Workspace、Agent API / SSE 等能力，并结合 RAG / Graph RAG、知识图谱、本体增强业务语义理解；",
           "en": "An AI Agent platform for energy data operations and complex business scenarios. Redesigned the Agent Runtime inspired by DeepSeek Harness (Harness + Plugin): workflows, subagents, jobs and other extensions are pluginized into a stable runtime core with pluggable capabilities — greatly improving long-task execution, context management, crash recovery and stability. Planned layers: intelligent apps, platform services, Agent Harness/Runtime and data-knowledge capabilities — covering Agent Loop, Session, Context, Plugin Context, Checkpoint/Resume, Compaction, Workspace, Agent API/SSE — enriched by RAG/Graph RAG, knowledge graphs and ontology for business semantics. Smart apps cover policy Q&A, data catalog analysis, industry intelligence, long-running tasks and evidence-based report generation."
         },
         "tags": [
@@ -538,9 +556,9 @@
           "RAG",
           "DeepSeek Harness"
         ],
-        "image": "/uploads/1787316257155-22d30608.png",
+        "image": "/uploads/1787966715040-200fccea.png",
         "links": {
-          "demo": "",
+          "demo": "https://dataagent-website.zt417.cn/",
           "github": ""
         },
         "featured": false
@@ -561,9 +579,9 @@
           "AI-Ready",
           "FastData"
         ],
-        "image": "",
+        "image": "/uploads/1787967214486-7c443861.png",
         "links": {
-          "demo": "",
+          "demo": "http://47.116.213.47:30010/",
           "github": ""
         },
         "featured": false
@@ -583,28 +601,7 @@
           "国网",
           "数字合约"
         ],
-        "image": "",
-        "links": {
-          "demo": "",
-          "github": ""
-        },
-        "featured": false
-      },
-      {
-        "name": {
-          "zh": "AI 产品体系与组织 AI 化",
-          "en": "AI Product System & Organizational AI"
-        },
-        "description": {
-          "zh": "建立 AI 辅助产品经理工作流，将 AI 应用于需求分析、竞品研究、架构设计、原型、PRD、解决方案与 Demo 开发；推动 ChatGPT(Codex)、Claude、Cursor 等 AI 工具在产品及业务团队中的应用，开展 AI 产品方法与工具培训；负责业务线 AI 创新方向研究，持续跟踪基础模型、Agent、AI Infra、RAG、知识图谱及 AI Coding 技术趋势；AI 创新项目入选集团“智赢未来奖”并进入前三。",
-          "en": "Established an AI-augmented PM workflow applying AI to requirements, competitive research, architecture, prototypes, PRDs, solutions and demo development; drove adoption of ChatGPT (Codex), Claude and Cursor across product & business teams with hands-on training; led AI innovation research for the business line, tracking foundation models, agents, AI infra, RAG, knowledge graphs and AI coding trends; the AI innovation project won the group’s “Smart Win Future” award, ranking top three."
-        },
-        "tags": [
-          "AI 工作流",
-          "组织提效",
-          "AI 培训"
-        ],
-        "image": "",
+        "image": "/uploads/1787970906471-3c0439ab.png",
         "links": {
           "demo": "",
           "github": ""
@@ -626,10 +623,31 @@
           "App",
           "出行"
         ],
-        "image": "",
+        "image": "/uploads/1787968096186-c2490a70.png",
         "links": {
           "demo": "",
           "github": ""
+        },
+        "featured": false
+      },
+      {
+        "name": {
+          "zh": "AI 产品体系与组织 AI 化",
+          "en": "AI Product System & Organizational AI"
+        },
+        "description": {
+          "zh": "建立 AI 辅助产品经理工作流，将 AI 应用于需求分析、竞品研究、架构设计、原型、PRD、解决方案与 Demo 开发；推动 ChatGPT(Codex)、Claude、Cursor 等 AI 工具在产品及业务团队中的应用，开展 AI 产品方法与工具培训；负责业务线 AI 创新方向研究，持续跟踪基础模型、Agent、AI Infra、RAG、知识图谱及 AI Coding 技术趋势；AI 创新项目入选集团“智赢未来奖”并进入前三。",
+          "en": "Established an AI-augmented PM workflow applying AI to requirements, competitive research, architecture, prototypes, PRDs, solutions and demo development; drove adoption of ChatGPT (Codex), Claude and Cursor across product & business teams with hands-on training; led AI innovation research for the business line, tracking foundation models, agents, AI infra, RAG, knowledge graphs and AI coding trends; the AI innovation project won the group’s “Smart Win Future” award, ranking top three."
+        },
+        "tags": [
+          "AI 工作流",
+          "组织提效",
+          "AI 培训"
+        ],
+        "image": "/uploads/1787969577310-2ea9ece4.png",
+        "links": {
+          "demo": "",
+          "github": "https://github.com/muzizhi7/AI-for-PM"
         },
         "featured": false
       }
@@ -682,6 +700,6 @@
       "zh": "© {year} 李智豪 · 用 AI 重构产品体验",
       "en": "© {year} Zhihao Li · Reimagining products with AI"
     },
-    "showSocials": true
+    "showSocials": false
   }
 }
