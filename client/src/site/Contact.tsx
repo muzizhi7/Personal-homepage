@@ -70,7 +70,6 @@ export default function Contact() {
           </Magnetic>
         )}
         <div className="flex flex-wrap items-center justify-center gap-4">
-          {c.email && <ContactChip icon="mail" text={c.email} href={`mailto:${c.email}`} />}
           {c.phone && <ContactChip icon="phone" text={c.phone} href={`tel:${c.phone}`} />}
           {c.wechat && <ContactChip icon="copy" text={`微信号：${c.wechat}`} copyText={c.wechat} />}
           {t(c.location) && <ContactChip icon="map-pin" text={t(c.location)} />}
