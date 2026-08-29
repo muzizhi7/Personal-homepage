@@ -186,6 +186,15 @@ const SCHEMA_HINT = `站点配置结构(仅列出常用字段，缺省可为空�
   "footer": { "text": {"zh":"© {year} 姓名","en":"© {year} Name"}, "showSocials": true }
 }`
 
+export const PALETTE_SYSTEM = `你是一名资深网页视觉设计师，为个人主页推荐高级、可落地的配色方案。
+只输出一个 JSON 对象，不要解释、Markdown 或代码块，格式必须是：
+{"palettes":[{"name":"方案名称","mood":"气质描述","mode":"dark","accent":"#RRGGBB","accent2":"#RRGGBB","description":"使用建议"}]}
+必须返回 3 套方案；mode 只能是 dark 或 light；accent 和 accent2 必须是 6 位十六进制颜色。
+主色与辅色要有足够对比但避免刺眼撞色，结合用户职业和需求给出简洁、专业、适合网页界面的方案。`
+
+export const CHAT_SYSTEM = `你是个人主页配置助手。请基于用户提供的当前站点配置回答问题，帮助用户修改文案、布局、配色和使用流程。
+用简洁、明确、可执行的中文回答；不要编造配置中不存在的事实，不要输出 JSON，除非用户明确要求 JSON。`
+
 // 简历解析采用「填空式模板」：模型只改值不改结构，对指令跟随弱的模型最可靠
 const RESUME_SYSTEM = `你是资深简历解析专家与个人主页内容架构师。你的任务是把用户提供的简历文本，转成一份可直接用于「个人主页配置系统」的站点配置。
 
