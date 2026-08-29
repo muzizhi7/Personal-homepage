@@ -588,6 +588,29 @@
       },
       {
         "name": {
+          "zh": "AI元能仓 + 智能助手 · 能源行业AI服务平台",
+          "en": "AI Meta-Energy Hub + Intelligent Assistant · Energy AI Service Platform"
+        },
+        "description": {
+          "zh": "2026 - 至今 · 产品负责人 / AI产品经理\n\n面向能源行业构建 AI 服务发现、试用、订阅与交付平台，并配套智能助手，形成从服务供给、智能检索到使用交付的运营闭环。负责 AI 元能仓与智能助手的产品规划、业务架构、功能设计及落地，覆盖服务商、平台运营方与企业用户等角色；设计 AI 服务分类检索、详情展示、在线试用、订阅申请、订单与交付等核心流程，降低能源 AI 服务的发现与使用门槛；规划基于大语言模型与知识检索的智能助手，支持自然语言找服务、平台规则问答、能力推荐与服务对比；设计产品发布智能校验与工具调用能力，对名称、分类、描述、参数及材料完整性进行辅助检查，并联动平台工具完成查询与操作。",
+          "en": "2026 - Present · Product Lead / AI Product Manager\n\nAn energy-industry AI service discovery, trial, subscription and delivery platform paired with an intelligent assistant, forming an operating loop from service supply and intelligent search to delivery. Owned product planning, business architecture, feature design and delivery for the AI Meta-Energy Hub and assistant across providers, platform operators and enterprise users; designed service categorization and search, detail pages, online trials, subscription requests, orders and delivery workflows to lower the barrier to discovering and using energy AI services; planned an LLM- and knowledge-retrieval-powered assistant for natural-language service discovery, platform rule Q&A, capability recommendations and service comparison; and designed intelligent publishing checks and tool-calling capabilities to validate names, categories, descriptions, parameters and material completeness while coordinating platform tools for queries and actions."
+        },
+        "tags": [
+          "AI元能仓",
+          "智能助手",
+          "能源行业AI",
+          "服务发现",
+          "智能检索"
+        ],
+        "image": "",
+        "links": {
+          "demo": "https://edataspace.bangdao-tech.com/tds-portal/ai-meta-market",
+          "github": ""
+        },
+        "featured": false
+      },
+      {
+        "name": {
           "zh": "国网能源行业可信数据空间",
           "en": "Trusted Data Space for Energy (State Grid)"
         },
