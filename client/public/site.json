@@ -196,6 +196,35 @@
     "items": [
       {
         "company": {
+          "zh": "奇瑞汽车（Chery）",
+          "en": "Chery Automobile"
+        },
+        "role": {
+          "zh": "AI 产品经理",
+          "en": "AI Product Manager"
+        },
+        "period": {
+          "zh": "2026.10 — 至今",
+          "en": "Oct 2026 — Present"
+        },
+        "location": {
+          "zh": "",
+          "en": ""
+        },
+        "description": {
+          "zh": "主要负责企业 AI 应用方向，包括企业 AI 个人助手、企业级 AI 产品等方向的探索与落地。",
+          "en": "Focused on enterprise AI applications, including enterprise AI personal assistant and enterprise-grade AI product exploration and delivery."
+        },
+        "tags": [
+          "企业 AI",
+          "AI 助手",
+          "AI 产品"
+        ],
+        "logo": "",
+        "url": ""
+      },
+      {
+        "company": {
           "zh": "朗新科技集团",
           "en": "Longshine Technology Group"
         },
@@ -204,8 +233,8 @@
           "en": "Product Expert / Senior AI Product Expert"
         },
         "period": {
-          "zh": "2023.06 — 至今",
-          "en": "Jun 2023 — Present"
+          "zh": "2023.06 — 2026.09",
+          "en": "Jun 2023 — Sep 2026"
         },
         "location": {
           "zh": "江苏 · 无锡",
