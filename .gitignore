@@ -10,3 +10,5 @@ data/assistant.json
 data/secret
 data/INITIAL_PASSWORD.txt
 data/uploads/
+.vercel
+.env*

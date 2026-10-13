@@ -2,6 +2,9 @@
 node_modules
 client/node_modules
 client/dist
+data
+.env*
+.vercel
 data/auth.json
 data/assistant.json
 data/secret
