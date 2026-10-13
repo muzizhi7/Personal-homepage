@@ -74,6 +74,7 @@ const ctaShape = {
 const resumeShape = {
   url: (v) => str(v, 500),
   label: btext,
+  notice: btext,
 }
 
 export function sanitizeSite(raw = {}) {

@@ -123,6 +123,7 @@ export interface Social {
 export interface ResumeConfig {
   url: string
   label: BText
+  notice?: BText
 }
 export interface Contact {
   enabled: boolean

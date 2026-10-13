@@ -6,8 +6,8 @@
       "en": "Zhihao Li · AI Product Manager / AI Product Expert"
     },
     "description": {
-      "zh": "5+ 年产品、数据与 AI 经验，江南大学控制工程硕士，朗新科技集团 AI 高级产品专家。专注 AI 产品与智能体产品设计，具备从场景定义、Agent 架构到产品交付的完整 AI 产品落地能力。",
-      "en": "5+ years in product, data & AI. M.S. in Control Engineering (Jiangnan University). Senior AI Product Expert at Longshine Technology. End-to-end AI product delivery: from scenario definition and agent architecture to shipped products."
+      "zh": "5+ 年产品、数据与 AI 经验，江南大学控制工程硕士，现任奇瑞汽车 AI 产品经理。专注企业 AI 应用、AI 个人助手与智能体产品设计，具备从场景定义、Agent 架构到产品交付的完整 AI 产品落地能力。",
+      "en": "5+ years in product, data and AI. M.S. in Control Engineering from Jiangnan University. AI Product Manager at Chery Automobile, focused on enterprise AI applications, AI personal assistants and agent product design, from scenario definition and architecture to delivery."
     },
     "keywords": "AI产品经理, AI Agent, 智能体, 产品设计, RAG, 可信数据空间, 数据中台, AI Product Manager",
     "favicon": "/uploads/1787315553364-590a940a.jpeg",
@@ -49,8 +49,8 @@
       "en": "Reimagining product experiences with AI Agents"
     },
     "subheadline": {
-      "zh": "朗新科技集团 AI 高级产品专家 · 江南大学控制工程硕士。专注 AI 产品与 Agent 产品设计，从业务洞察、AI 场景定义、Agent 架构到产品交付的一体化落地。个人产品「观赛官 GameSense」AI OPC 实践者。",
-      "en": "Senior AI Product Expert @ Longshine Technology · M.S. in Control Engineering @ Jiangnan University. Focused on AI & Agent product design — from insight, scenario definition and agent architecture to delivery. Practicing AI OPC with my product GameSense."
+      "zh": "奇瑞汽车 AI 产品经理 · 江南大学控制工程硕士。聚焦企业 AI 应用、企业 AI 个人助手与智能体产品设计，从业务洞察、场景定义、Agent 架构到产品交付的一体化落地。个人产品「观赛官 GameSense」AI OPC 实践者。",
+      "en": "AI Product Manager @ Chery Automobile · M.S. in Control Engineering @ Jiangnan University. Focused on enterprise AI applications, AI personal assistants and agent product design — from business insight and scenario definition to architecture and delivery. Practicing AI OPC with my product GameSense."
     },
     "avatar": "/uploads/1787401656297-3b8d1b91.webp",
     "badges": [
@@ -110,12 +110,12 @@
     },
     "paragraphs": [
       {
-        "zh": "5+ 年产品、数据与 AI 相关经验，江南大学控制工程硕士，现任朗新科技集团 AI 高级产品专家，工作重心已由可信数据空间产品规划转向 AI 产品与智能体产品设计。具备从业务洞察、AI 场景定义、产品 / Agent 架构、Prompt 与上下文工程，到原型 Demo、研发协同与产品交付的完整 AI 产品落地能力。",
-        "en": "5+ years across product, data and AI. M.S. in Control Engineering from Jiangnan University; currently Senior AI Product Expert at Longshine Technology, where my focus has shifted from trusted data space products to AI products and agent product design — covering the full AI product delivery loop: business insight, scenario definition, product/agent architecture, prompt & context engineering, prototypes, R&D collaboration and shipping."
+        "zh": "5+ 年产品、数据与 AI 相关经验，江南大学控制工程硕士，现任奇瑞汽车 AI 产品经理，主要负责企业 AI 应用方向，包括企业 AI 个人助手、企业级 AI 产品等方向的探索与落地。具备从业务洞察、AI 场景定义、产品 / Agent 架构、Prompt 与上下文工程，到原型 Demo、研发协同与产品交付的完整 AI 产品落地能力。",
+        "en": "5+ years across product, data and AI. M.S. in Control Engineering from Jiangnan University; currently an AI Product Manager at Chery Automobile, exploring and delivering enterprise AI applications, AI personal assistants and enterprise-grade AI products. My experience spans the full AI product delivery loop: business insight, scenario definition, product/agent architecture, prompt and context engineering, prototypes, R&D collaboration and shipping."
       },
       {
-        "zh": "近一年重点负责 AI Agent 平台、AI 时代数据中台及 AI Native 产品规划与落地，并通过个人产品「观赛官 GameSense」实践 AI OPC（一人公司）；同时拥有能源数据、可信数据空间及复杂 B/C 端产品经验，持续研究 Agent Harness / Runtime、RAG / Graph RAG、Ontology、Workflow、A2A、AI Coding 等 AI 原生技术体系。",
-        "en": "In the past year I have led the planning and delivery of an AI Agent platform, an AI-era data platform, and AI-native products — while practicing AI OPC (one-person company) with my own product GameSense. I also bring deep experience in energy data, trusted data spaces and complex B/C-end products, and keep researching AI-native stacks: Agent Harness/Runtime, RAG/Graph RAG, ontology, workflow, A2A and AI coding."
+        "zh": "曾在朗新科技集团负责 AI Agent 平台、AI 时代数据中台及 AI Native 产品规划与落地，并通过个人产品「观赛官 GameSense」实践 AI OPC（一人公司）；同时拥有能源数据、可信数据空间及复杂 B/C 端产品经验，持续研究 Agent Harness / Runtime、RAG / Graph RAG、Ontology、Workflow、A2A、AI Coding 等 AI 原生技术体系。",
+        "en": "Previously at Longshine Technology Group, I led the planning and delivery of an AI Agent platform, an AI-era data platform and AI-native products. I continue practicing AI OPC (one-person company) with my own product GameSense, and bring experience in energy data, trusted data spaces and complex B2B/B2C products. I keep researching Agent Harness/Runtime, RAG/Graph RAG, ontology, workflow, A2A and AI coding."
       },
       {
         "zh": "学生时期在 B 站做视频累计获得 30+ 万播放；曾与朋友共同创业，具备较强的管理、沟通与跨团队协作能力。",
@@ -242,7 +242,7 @@
         },
         "description": {
           "zh": "工作方向由数据要素、可信数据空间逐步转向 AI 产品、Agent 产品及能源行业 AI 应用，负责 AI 产品规划、解决方案设计及重点项目落地。负责数据运营业务线 AI 创新小组，主导 AI Agent 平台与能源数据智能底座规划（Agent Harness / Runtime、Workspace、Tool / Plugin、Workflow、RAG / Graph RAG、知识图谱、本体、长任务执行等能力）；建立 AI 辅助产品经理工作方法，将大模型与 AI Coding 引入需求分析、行业研究、产品架构、原型、PRD、Demo 与解决方案生产流程。",
-          "en": "Shifted focus from data elements & trusted data space toward AI products, agent products and energy-industry AI apps — owning AI product planning, solution design and key project delivery. Leads the AI innovation squad of the data operations business line; leads planning of the AI Agent platform and energy data intelligence foundation (Agent Harness/Runtime, Workspace, Tool/Plugin, Workflow, RAG/Graph RAG, knowledge graph, ontology, long-running tasks). Built an AI-augmented PM workflow that brings LLMs and AI coding into requirements, industry research, architecture, prototypes, PRDs, demos and solutions."
+          "en": "Shifted focus from data elements and trusted data spaces toward AI products, agent products and energy-industry AI applications, owning AI product planning, solution design and key project delivery. Led the AI innovation squad of the data operations business line and the planning of the AI Agent platform and energy data intelligence foundation (Agent Harness/Runtime, Workspace, Tool/Plugin, Workflow, RAG/Graph RAG, knowledge graphs, ontology and long-running tasks). Built an AI-augmented PM workflow that brought LLMs and AI coding into requirements, industry research, architecture, prototypes, PRDs, demos and solutions."
         },
         "tags": [
           "AI 产品规划",
@@ -701,6 +701,10 @@
     "phone": "17826111330",
     "wechat": "LZHloveJoJo4ever",
     "resume": {
+      "notice": {
+        "zh": "这是旧版简历，尚未包含入职奇瑞汽车后的最新经历。最新信息请以主页为准。",
+        "en": "This is an older resume and does not include my latest experience at Chery Automobile. Please refer to the homepage for current information."
+      },
       "url": "/uploads/1787980202328-eee03627.pdf",
       "label": {
         "zh": "下载简历",

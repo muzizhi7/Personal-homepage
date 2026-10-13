@@ -7,6 +7,7 @@ import { cn, scrollToHash } from '../lib/utils'
 import { Icon } from '../components/icons'
 import { EASE, IconButton, LangToggle } from '../components/ui'
 import { resolveProfileAvatar } from './profile-avatar'
+import ResumeDownloadLink from './ResumeDownloadLink'
 
 export default function Navbar() {
   const { site, t } = useSite()
@@ -127,15 +128,14 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <LangToggle />
             {site.contact.resume?.url && (
-              <a
-                href={site.contact.resume.url}
-                download
+              <ResumeDownloadLink
+                resume={site.contact.resume}
                 aria-label={t(site.contact.resume.label)}
                 title={t(site.contact.resume.label)}
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-line text-muted transition-all duration-300 hover:border-accent/40 hover:bg-card hover:text-ink"
               >
                 <Icon name="download" size={16} />
-              </a>
+              </ResumeDownloadLink>
             )}
             <IconButton className="md:hidden" label="菜单" onClick={() => setMenuOpen((v) => !v)}>
               <Icon name={menuOpen ? 'close' : 'menu'} size={17} />

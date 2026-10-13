@@ -4,6 +4,7 @@ import { Icon } from '../components/icons'
 import type { IconName } from '../components/icons'
 import { Magnetic, Reveal, Section, SectionHeading, SiteButton } from '../components/ui'
 import { platformIcon } from '../components/icons'
+import ResumeDownloadLink from './ResumeDownloadLink'
 
 function ContactChip({
   icon,
@@ -75,14 +76,13 @@ export default function Contact() {
           {t(c.location) && <ContactChip icon="map-pin" text={t(c.location)} />}
         </div>
         {c.resume?.url && (
-          <a
-            href={c.resume.url}
-            download
+          <ResumeDownloadLink
+            resume={c.resume}
             className="btn-gradient-hover inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-[13.5px] font-medium"
           >
             <Icon name="download" size={15} />
             {t(c.resume.label)}
-          </a>
+          </ResumeDownloadLink>
         )}
         <div className="flex flex-wrap items-center justify-center gap-3">
           {c.socials

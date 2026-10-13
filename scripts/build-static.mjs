@@ -26,6 +26,23 @@ if (fs.existsSync(siteSrc)) {
   }
 }
 
+// 将配置里的描述写入静态 HTML，搜索引擎无需执行脚本即可读取。
+const snapshotPath = path.join(DIST_DIR, 'site.json')
+const htmlPath = path.join(DIST_DIR, 'index.html')
+if (fs.existsSync(snapshotPath) && fs.existsSync(htmlPath)) {
+  const site = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'))
+  const lang = site.meta?.defaultLang || 'zh'
+  const description = site.meta?.description?.[lang] || site.meta?.description?.zh || ''
+  const escaped = description.replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  })[char])
+  const html = fs.readFileSync(htmlPath, 'utf8').replace(
+    /(<meta name="description" content=")[^"]*("\s*\/?\s*>)/,
+    (_match, start, end) => `${start}${escaped}${end}`,
+  )
+  fs.writeFileSync(htmlPath, html)
+}
+
 // 2) uploads —— 站内图片
 const uploadsSrc = path.join(DATA_DIR, 'uploads')
 const uploadsDest = path.join(DIST_DIR, 'uploads')

@@ -226,7 +226,7 @@ export function seed() {
       email: 'hello@example.com',
       phone: '',
       wechat: '',
-      resume: { url: '', label: { zh: '下载简历', en: 'Download Resume' } },
+      resume: { url: '', label: { zh: '下载简历', en: 'Download Resume' }, notice: { zh: '', en: '' } },
       location: { zh: '中国 · 上海', en: 'Shanghai, China' },
       cta: { label: { zh: '发邮件给我', en: 'Email me' }, href: 'mailto:hello@example.com' },
       socials: [

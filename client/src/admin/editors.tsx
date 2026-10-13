@@ -355,6 +355,9 @@ export function ContactEditor({ d, setSection }: EditorCtx) {
       <Field label="简历按钮文案">
         <LangInput value={resume.label} onChange={(label) => setSection('contact', { resume: { ...resume, label } })} />
       </Field>
+      <Field label="简历下载提示" hint="下载前显示确认提示；上传新版后可清空">
+        <LangInput value={resume.notice ?? { zh: '', en: '' }} onChange={(notice) => setSection('contact', { resume: { ...resume, notice } })} multiline rows={2} />
+      </Field>
       <Field label="位置">
         <LangInput value={c.location} onChange={(location) => setSection('contact', { location })} />
       </Field>
