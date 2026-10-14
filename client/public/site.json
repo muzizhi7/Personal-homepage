@@ -6,8 +6,8 @@
       "en": "Zhihao Li · AI Product Manager / AI Product Expert"
     },
     "description": {
-      "zh": "5+ 年产品、数据与 AI 经验，江南大学控制工程硕士，现任奇瑞汽车 AI 产品经理。专注企业 AI 应用、AI 个人助手与智能体产品设计，具备从场景定义、Agent 架构到产品交付的完整 AI 产品落地能力。",
-      "en": "5+ years in product, data and AI. M.S. in Control Engineering from Jiangnan University. AI Product Manager at Chery Automobile, focused on enterprise AI applications, AI personal assistants and agent product design, from scenario definition and architecture to delivery."
+      "zh": "5+ 年产品、数据与 AI 经验，江南大学控制工程硕士，现任奇瑞汽车 AI 高级产品经理。专注企业 AI 应用、AI 个人助手与智能体产品设计，具备从场景定义、Agent 架构到产品交付的完整 AI 产品落地能力。",
+      "en": "5+ years in product, data and AI. M.S. in Control Engineering from Jiangnan University. Senior AI Product Manager at Chery Automobile, focused on enterprise AI applications, AI personal assistants and agent product design, from scenario definition and architecture to delivery."
     },
     "keywords": "AI产品经理, AI Agent, 智能体, 产品设计, RAG, 可信数据空间, 数据中台, AI Product Manager",
     "favicon": "/uploads/1787315553364-590a940a.jpeg",
@@ -49,8 +49,8 @@
       "en": "Reimagining product experiences with AI Agents"
     },
     "subheadline": {
-      "zh": "奇瑞汽车 AI 产品经理 · 江南大学控制工程硕士。聚焦企业 AI 应用、企业 AI 个人助手与智能体产品设计，从业务洞察、场景定义、Agent 架构到产品交付的一体化落地。个人产品「观赛官 GameSense」AI OPC 实践者。",
-      "en": "AI Product Manager @ Chery Automobile · M.S. in Control Engineering @ Jiangnan University. Focused on enterprise AI applications, AI personal assistants and agent product design — from business insight and scenario definition to architecture and delivery. Practicing AI OPC with my product GameSense."
+      "zh": "奇瑞汽车 AI 高级产品经理 · 江南大学控制工程硕士。聚焦企业 AI 应用、企业 AI 个人助手与智能体产品设计，从业务洞察、场景定义、Agent 架构到产品交付的一体化落地。个人产品「观赛官 GameSense」AI OPC 实践者。",
+      "en": "Senior AI Product Manager @ Chery Automobile · M.S. in Control Engineering @ Jiangnan University. Focused on enterprise AI applications, AI personal assistants and agent product design — from business insight and scenario definition to architecture and delivery. Practicing AI OPC with my product GameSense."
     },
     "avatar": "/uploads/1787401656297-3b8d1b91.webp",
     "badges": [
@@ -110,8 +110,8 @@
     },
     "paragraphs": [
       {
-        "zh": "5+ 年产品、数据与 AI 相关经验，江南大学控制工程硕士，现任奇瑞汽车 AI 产品经理，主要负责企业 AI 应用方向，包括企业 AI 个人助手、企业级 AI 产品等方向的探索与落地。具备从业务洞察、AI 场景定义、产品 / Agent 架构、Prompt 与上下文工程，到原型 Demo、研发协同与产品交付的完整 AI 产品落地能力。",
-        "en": "5+ years across product, data and AI. M.S. in Control Engineering from Jiangnan University; currently an AI Product Manager at Chery Automobile, exploring and delivering enterprise AI applications, AI personal assistants and enterprise-grade AI products. My experience spans the full AI product delivery loop: business insight, scenario definition, product/agent architecture, prompt and context engineering, prototypes, R&D collaboration and shipping."
+        "zh": "5+ 年产品、数据与 AI 相关经验，江南大学控制工程硕士，现任奇瑞汽车 AI 高级产品经理，主要负责企业 AI 应用方向，包括企业 AI 个人助手、企业级 AI 产品等方向的探索与落地。具备从业务洞察、AI 场景定义、产品 / Agent 架构、Prompt 与上下文工程，到原型 Demo、研发协同与产品交付的完整 AI 产品落地能力。",
+        "en": "5+ years across product, data and AI. M.S. in Control Engineering from Jiangnan University; currently a Senior AI Product Manager at Chery Automobile, exploring and delivering enterprise AI applications, AI personal assistants and enterprise-grade AI products. My experience spans the full AI product delivery loop: business insight, scenario definition, product/agent architecture, prompt and context engineering, prototypes, R&D collaboration and shipping."
       },
       {
         "zh": "曾在朗新科技集团负责 AI Agent 平台、AI 时代数据中台及 AI Native 产品规划与落地，并通过个人产品「观赛官 GameSense」实践 AI OPC（一人公司）；同时拥有能源数据、可信数据空间及复杂 B/C 端产品经验，持续研究 Agent Harness / Runtime、RAG / Graph RAG、Ontology、Workflow、A2A、AI Coding 等 AI 原生技术体系。",
@@ -200,8 +200,8 @@
           "en": "Chery Automobile"
         },
         "role": {
-          "zh": "AI 产品经理",
-          "en": "AI Product Manager"
+          "zh": "AI 高级产品经理",
+          "en": "Senior AI Product Manager"
         },
         "period": {
           "zh": "2026.10 — 至今",
