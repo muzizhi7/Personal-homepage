@@ -2,6 +2,7 @@
   "buildCommand": "npm run build:vercel",
   "outputDirectory": "client/dist",
   "rewrites": [
+    { "source": "/yundong/api/:path*", "destination": "https://today-we-move-api.vercel.app/api/:path*" },
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/uploads/(.*)", "destination": "/uploads/$1" },
     { "source": "/(.*)", "destination": "/index.html" }
